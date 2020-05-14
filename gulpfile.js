@@ -16,3 +16,4 @@ function imageSmall(cb) {
   cb();
 }
 
+exports.default = gulp.parallel(smallCss, imageSmall);
