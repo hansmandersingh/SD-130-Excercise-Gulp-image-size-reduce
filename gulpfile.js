@@ -5,14 +5,14 @@ const imageMin = require('gulp-imagemin');
 function smallCss(cb) {
   gulp.src('src/css/*')
     .pipe(cleanCSS())
-    .pipe(gulp.dest('dest/css'))
+    .pipe(gulp.dest('dist/css'))
   cb();
 }
 
 function imageSmall(cb) {
   gulp.src('src/img/*')
     .pipe(imageMin())
-    .pipe(gulp.dest('dest/img'))
+    .pipe(gulp.dest('dist/img'))
   cb();
 }
 
